@@ -6,7 +6,7 @@ set :application, "blog"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
-set :use_sudo, false
+set :use_sudo, true
 
 set :scm, "git"
 set :repository, "git@github.com:andremaha/#{application}.git"
